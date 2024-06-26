@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+.servizi-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; /* Ensure positioning context for the icon */
+}
+
+.servizi-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.servizi-navList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.servizi-navItem {
+  margin: 0 10px;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+.servizi-navLink {
+  color: #fff;
+  text-decoration: none;
+}
+
+.servizi-container {
+  margin-top: 80px; /* Ensure content doesn't hide behind navbar */
+  padding-top: 50px;
+  text-align: center;
+  width: 100%; /* Make sure the container takes full width */
+}
+
+.servizio-header-banner {
+  width: 100%;
+  background-color: rgba(61, 58, 58, 0.8); /* Bordeaux color with some transparency */
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-sizing: border-box; /* Ensure padding doesn't add to the width */
+  margin-bottom: 30px; /* Add margin to separate from boxes */
+}
+
+.servizi-h1 {
+  margin-bottom: 0;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  color: white;
+  line-height: 100px; /* This should center the text vertically */
+}
+
+.servizi-boxes-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.servizi-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Reduced gap between items */
+  justify-items: center; /* Center the items horizontally */
+}
+
+.servizio-box {
+  background-color: #382525;
+  border-radius: 10px;
+  padding: 10px; /* Reduced padding */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 140px; /* Reduced width */
+  height: 160px; /* Reduced height */
+  font-family: Helvetica;
+}
+
+.servizio-box h2 {
+  font-size: 13px; /* Reduced font size */
+  margin: 10px 0 5px 0; /* Adjusted margin */
+  font-family: Helvetica;
+  color: #fff;
+}
+
+.servizio-box p {
+  font-size: 12px; /* Reduced font size */
+  color: #fff;
+}
+
+.facebook-icon {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  color: #0d0ac4; /* Facebook blue color */
+  font-size: 39px;
+  text-decoration: none;
+}
+
+.facebook-icon:hover {
+  color: #8b9dc3;
+}
+
+.whatsapp-icon {
+  color: #25D366;
+  position: absolute;
+  bottom: 0px;
+  left: 70px;
+  font-size: 40px;
+  text-decoration: none; /* WhatsApp green color */
+}
+
+.whatsapp-icon:hover {
+  color: #075E54;
+}

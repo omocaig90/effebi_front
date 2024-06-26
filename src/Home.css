@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Ensure positioning context for the icon */
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    margin: 0 10px;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  }
+  
+  .navLink {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .container {
+    margin-top: 60px; /* Ensure content doesn't hide behind navbar */
+    padding-top: 50px;
+    text-align: center;
+    width: 100%; /* Make sure the container takes full width */
+  }
+  
+  .header-banner {
+    width: 100%;
+    background-color: rgba(61, 58, 58, 0.8); /* Bordeaux color with some transparency */
+    padding: 20px 0;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding doesn't add to the width */
+  }
+  
+  .header-text {
+    color: #fff;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 30px;
+  }
+  
+  .header-text h1 {
+    font-weight: bold;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-size: 42px;
+    margin-bottom: 5px;
+    color: orange; /* Reduce the space below the h1 */
+  }
+  
+  .header-text p {
+    margin-top: 5px; /* Reduce the space above the p */
+  }
+  
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px; /* Reduced padding */
+    border-radius: 10px;
+    width: 200px; /* Reduced width */
+    height: 160px; /* Reduced height */
+    text-align: left;
+    font-family: Helvetica;
+    
+  }
+  
+  .box h2 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 13px; /* Slightly larger font size for headings */
+  }
+  
+  .box p {
+    font-size: 12px; /* Reduced font size for paragraphs */
+  }
+
+  .facebook-icon {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    color: #0d0ac4; /* Facebook blue color */
+    font-size: 39px;
+    text-decoration: none;
+  }
+  
+  .facebook-icon:hover {
+    color: #8b9dc3;
+  }
+
+  .whatsapp-icon {
+    color: #25D366;
+    position: absolute;
+    bottom: 0px;
+    left: 70px;
+    font-size: 40px;
+    text-decoration: none; /* WhatsApp green color */
+  }
+  
+  .whatsapp-icon:hover {
+    color: #075E54;
+  }
+  
