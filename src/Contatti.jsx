@@ -57,6 +57,7 @@ function Contatti() {
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
+            title="EFFEBI Location Map"
           ></iframe>
         </div>
       </div>
