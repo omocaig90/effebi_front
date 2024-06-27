@@ -11,7 +11,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative; /* Ensure positioning context for the icon */
+  position: relative;
 }
 
 .servizi-navbar {
@@ -56,16 +56,30 @@
   height: 100px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   box-sizing: border-box; /* Ensure padding doesn't add to the width */
   margin-bottom: 30px; /* Add margin to separate from boxes */
+  padding: 0 10px; /* Add padding to ensure text fits */
 }
 
 .servizi-h1 {
   margin-bottom: 0;
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
   color: white;
-  line-height: 100px; /* This should center the text vertically */
+  line-height: normal; /* Reset line height */
+  font-size: 2rem; /* Adjust font size for better responsiveness */
+  text-align: center; /* Ensure text is centered */
+}
+
+@media (max-width: 767px) {
+  .servizio-header-banner {
+    height: auto; /* Adjust height for mobile devices */
+    padding: 20px 0; /* Add padding for better spacing */
+  }
+
+  .servizi-h1 {
+    font-size: 1.5rem; /* Adjust font size for better readability on small screens */
+  }
 }
 
 .servizi-boxes-wrapper {
@@ -84,11 +98,15 @@
 .servizio-box {
   background-color: #382525;
   border-radius: 10px;
-  padding: 10px; /* Reduced padding */
+  padding: 3px; /* Reduced padding */
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 140px; /* Reduced width */
-  height: 160px; /* Reduced height */
+  width: 100%; /* Use Bootstrap's grid system for width */
+  max-width: 140px; /* Reduced width */
+  height: 200px; /* Set a fixed height for uniform boxes */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: Helvetica;
 }
 
@@ -102,6 +120,7 @@
 .servizio-box p {
   font-size: 12px; /* Reduced font size */
   color: #fff;
+  flex-grow: 1;
 }
 
 .facebook-icon {
@@ -128,4 +147,58 @@
 
 .whatsapp-icon:hover {
   color: #075E54;
+}
+.servizio-box .fa-icon {
+  font-size: 1.5rem;
+  margin-top: 10px;  /* Adjust the icon size */
+}
+
+.contatti-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px; /* Reduced margin-top to move content higher */
+}
+
+.contatto-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px; /* Reduced padding */
+  border-radius: 10px;
+  width: 150px; /* Reduced width */
+  height: 120px; /* Reduced height */
+  text-align: center;
+  margin-bottom: 20px; /* Added margin-bottom to separate from the map */
+}
+
+.contatto-box h2 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 16px; /* Reduced font size */
+}
+
+.contatto-box p {
+  font-size: 14px; /* Reduced font size */
+}
+
+.contatto-link {
+  color: white;
+  text-decoration: none;
+}
+
+.contatto-link:hover {
+  text-decoration: underline;
+}
+
+.map-container {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 600px;
+  height: 300px;
+  border: 1px solid #080808;
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5px;
 }

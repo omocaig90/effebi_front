@@ -20,9 +20,6 @@ function Home() {
                 </div>
                 <ul className="navList">
                     <li className="navItem">
-                        <Link to="/" className="navLink">HOME</Link>
-                    </li>
-                    <li className="navItem">
                         <Link to="/servizi" className="navLink">SERVIZI</Link>
                     </li>
                     <li className="navItem">
@@ -55,7 +52,7 @@ function Home() {
             <a href="https://www.facebook.com/profile.php?id=100055947356107" className="facebook-icon" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a href="https://wa.me/+393401542491" className="social-icon whatsapp-icon" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/+390106451117" className="social-icon whatsapp-icon" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faWhatsapp} />
             </a>
         </div>
