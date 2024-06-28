@@ -36,7 +36,7 @@ function Contatti() {
           <div className="contatto-box">
             <FontAwesomeIcon icon={faEnvelope} size="2x" color="#4d0808" className="fa-icon" />
             <h2>Email</h2>
-            <p><a href="mailto:info@effebi.com" className="contatto-link">info@effebi.com</a></p>
+            <p><a href="mailto:info@effebi-genova.it" className="contatto-link">info@effebi-genova.it</a></p>
           </div>
           <div className="contatto-box">
             <FontAwesomeIcon icon={faPhone} size="2x" color="#4d0808" className="fa-icon" />
